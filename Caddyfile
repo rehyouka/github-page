@@ -1,0 +1,7 @@
+# v2.10.2
+https://localhost:15173 {
+    root * D:/Projects/github-page/dist
+    encode gzip
+    redir / /pages/home/index.html 302
+    file_server
+}

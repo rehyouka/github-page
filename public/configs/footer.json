@@ -1,0 +1,27 @@
+[
+  {
+    "copyright": "Copyright © 2026 William Weng. All rights reserved.",
+    "menu": [
+      {
+        "desc": "Support",
+        "link": "https://example.org/"
+      },
+      {
+        "desc": "Privacy",
+        "link": "https://example.org/"
+      },
+      {
+        "desc": "Cookies",
+        "link": "https://example.org/"
+      },
+      {
+        "desc": "Terms of use",
+        "link": "https://example.org/"
+      },
+      {
+        "desc": "License",
+        "link": "https://example.org/"
+      }
+    ]
+  }
+]

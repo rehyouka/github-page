@@ -1,0 +1,31 @@
+body {
+    --rehyouka-color-primary: #5d65c8;
+
+    --rehyouka-color-bkg-primary: white;
+    --rehyouka-color-txt-primary: black;
+    --rehyouka-color-bkg-secondary: #f6f6f6;
+    --rehyouka-color-txt-secondary: #9198a1;
+}
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        --rehyouka-color-bkg-primary: black;
+        --rehyouka-color-txt-primary: white;
+        --rehyouka-color-bkg-secondary: #0e0e0e;
+        !*--rehyouka-color-txt-secondary: #f6f6f6;*!
+        --rehyouka-color-txt-secondary: #606060;
+    }
+}*/
+
+body.dark {
+    --rehyouka-color-bkg-primary: black;
+    --rehyouka-color-txt-primary: white;
+    --rehyouka-color-bkg-secondary: #0e0e0e;
+    --rehyouka-color-txt-secondary: #606060;
+}
+
+* {
+    font-family: sans-serif;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+}

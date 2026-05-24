@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="server" type="CaddyfileRunConfiguration" factoryName="CaddyfileRunConfiguration" caddy-exec="caddy" sub-command="run" caddyfile="D:\Projects\github-page\Caddyfile" working-dir="D:\Projects\github-page" env-files="">
+    <env-vars />
+    <method v="2" />
+  </configuration>
+</component>

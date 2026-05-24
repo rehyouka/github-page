@@ -1,0 +1,14 @@
+[
+  {
+    "sloganKeyword": "William Weng",
+    "sloganIntro": "a deprecated, last-gen, self-maintained runtime",
+    "buttonStart": {
+      "desc": "Quick Start",
+      "link": "https://example.org/"
+    },
+    "buttonMore": {
+      "desc": "Learn More",
+      "link": "https://example.org/"
+    }
+  }
+]

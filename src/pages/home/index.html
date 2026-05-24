@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>rehyouka</title>
+
+    <link rel="icon" href="/icons/brands/filled/W.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/devices.css">
+    <link rel="stylesheet" href="../../styles/theme.css">
+    <script type="module">
+        import {
+            DemoNavi,
+            DemoSignboard,
+            DemoGallery,
+            DemoLayoutGrid,
+            DemoCard,
+            DemoLayoutFlexFit,
+            DemoIcon,
+            DemoQ,
+            DemoBusinessCard,
+            DemoCare,
+            DemoReference,
+            DemoChannels,
+            DemoFooter,
+            DemoCookie,
+        } from '../../../../demo-components/dist/demo-components.es.js';
+    </script>
+    <style>
+        body {
+            background-color: var(--rehyouka-color-bkg-primary);
+        }
+
+        demo-signboard {
+            --signboard-bg-img-x: linear-gradient(to bottom, #d16ba5, #c467ad, #b365b5, #9f64bc, #8764c2, #745cbc, #6055b5, #4a4eaf, #3c3e9c, #2d2e8a, #1c1e78, #070f66);
+            --btn-color-light-x: var(--rehyouka-color-bkg-secondary);
+            --btn-color-dark-x: var(--rehyouka-color-primary);
+            --signboard-color-underline-x: var(--rehyouka-color-primary);
+        }
+
+        header, footer {
+            background-color: var(--rehyouka-color-bkg-secondary);
+        }
+        header {
+            padding-top: 3rem;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 100%;
+            max-width: var(--rehyouka-max-width);
+            padding: 2em;
+
+            /* TODO <demo-gallery> width: max-content */
+            overflow: hidden;
+        }
+
+        h2.title {
+            color: var(--rehyouka-color-txt-primary);
+            font-weight: 999;
+            display: inline-block;
+            transform: scaleY(0.88);
+            transform-origin: center;
+        }
+
+        section#cards > demo-layout-grid {
+            margin-top: 1.5em;
+            --layout-grid-column-landscape-x: 2;
+            --layout-grid-column-portrait-x: 1;
+            --layout-grid-gap-landscape-x: 3em;
+            --layout-grid-gap-portrait-x: 1.5em;
+        }
+        section#cards > demo-layout-grid > demo-card {
+            padding: 2em;
+            color: var(--rehyouka-color-txt-primary);
+        }
+        section#cards > demo-layout-grid > demo-card > demo-layout-flex-fit > div[slot=lt] {
+            width: 200px;
+            height: 200px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        section#cards > demo-layout-grid > demo-card > demo-layout-flex-fit > div[slot=lt] > demo-icon {
+            width: 8em;
+            height: 8em;
+            margin: 0 auto;
+        }
+        section#cards > demo-layout-grid > demo-card > demo-layout-flex-fit > ul[slot=rb] {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;;
+            list-style: none;
+        }
+        section#quote > demo-q {
+            color: var(--rehyouka-color-txt-primary);
+        }
+        section#quote > demo-q > div[slot=content] {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        }
+        section#quote > demo-business-card {
+            margin-top: 1em;
+            color: var(--rehyouka-color-txt-primary);
+            /*--business-card-color-sub-title-x: var(--rehyouka-color-txt-secondary);*/
+            --business-card-color-sub-title-x: var(--rehyouka-color-txt-secondary);
+            --a-color-deselect-x: var(--rehyouka-color-txt-secondary);
+            --a-color-select-x: rgb(31, 152, 255);
+        }
+        section#care > demo-care {
+            color: var(--rehyouka-color-bkg-primary);
+            --care-max-width-x: var(--rehyouka-max-width);
+            padding: 0;
+        }
+        footer > demo-reference {
+            font-size: 0.8em;
+            font-weight: 450;
+            color: var(--rehyouka-color-txt-secondary);
+            --a-color-select-x: var(--rehyouka-color-txt-primary);
+        }
+        footer > div#channels {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        footer > div#channels > demo-channels {
+            font-size: 1.2em;
+            color: var(--rehyouka-color-txt-secondary);
+            --a-color-select-x: var(--rehyouka-color-primary);
+        }
+        footer > demo-footer {
+            font-size: 0.8em;
+            color: var(--rehyouka-color-txt-secondary);
+            --a-color-select-x: var(--rehyouka-color-txt-primary);
+        }
+
+        demo-cookie {
+            color: white;
+            background-color: black;
+            --btn-color-dark-x: var(--rehyouka-color-primary);
+        }
+
+        demo-navi {
+            --navi-color-txt-x: var(--rehyouka-color-txt-secondary);
+            --navi-color-txt-select-x: var(--rehyouka-color-txt-primary);
+            --navi-color-txt-title-x: var(--rehyouka-color-txt-secondary);
+            --navi-color-bg-x: var(--rehyouka-color-bkg-secondary);
+            --navi-width-max: var(--rehyouka-max-width);
+            --a-color-select-x: var(--rehyouka-color-txt-primary);
+        }
+        demo-navi > demo-icon[slot=logo] {
+            width: 1em;
+            height: 1em;
+            color: var(--rehyouka-color-txt-primary);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <demo-signboard config-name="signboard" class="wrapper"></demo-signboard>
+        </header>
+
+        <section id="gallery" class="wrapper">
+            <h2 class="title">Likely trusted by</h2>
+            <demo-gallery
+                    config-name="gallery"
+                    w="202px"
+                    h="202px"
+                    gap="10px"
+                    playing
+            ></demo-gallery>
+        </section>
+
+        <section id="cards" class="wrapper">
+            <h2 class="title">Why William Weng</h2>
+            <demo-layout-grid>
+                <demo-card padded bordered rounded bouncing shadowed inset>
+                    <demo-layout-flex-fit>
+                        <div slot="lt"><demo-icon category="material" name="brain" filled></demo-icon></div>
+                        <ul slot="rb">
+                            <li><h4>Solo project.</h4></li>
+                            <li><h4>Team of two: me + AI.</h4></li>
+                            <li><h4>Not a unicorn, just an ordinary horse.</h4></li>
+                        </ul>
+                    </demo-layout-flex-fit>
+                </demo-card>
+                <demo-card padded bordered rounded bouncing shadowed inset>
+                    <demo-layout-flex-fit>
+                        <div slot="lt"><demo-icon category="material" name="plan" filled></demo-icon></div>
+                        <ul slot="rb">
+                            <li><h4>The roadmap depends entirely on my mood.</h4></li>
+                            <li><h4>Not retired yet, still grinding.</h4></li>
+                            <li><h4>Fingers crossed for an update tomorrow.</h4></li>
+                        </ul>
+                    </demo-layout-flex-fit>
+                </demo-card>
+
+                <demo-card padded bordered rounded bouncing shadowed inset>
+                    <demo-layout-flex-fit>
+                        <div slot="lt"><demo-icon category="material" name="shutup" filled></demo-icon></div>
+                        <ul slot="rb">
+                            <li><h4>Feel free to use, no ping required.</h4></li>
+                            <li><h4>Zero business sense.</h4></li>
+                            <li><h4>Living in the slums of the open-source community. </h4></li>
+                        </ul>
+                    </demo-layout-flex-fit>
+                </demo-card>
+                <demo-card padded bordered rounded bouncing shadowed inset>
+                    <demo-layout-flex-fit>
+                        <div slot="lt"><demo-icon category="material" name="coffee" filled></demo-icon></div>
+                        <ul slot="rb">
+                            <li><h4>Exploring the boundary between requirements and energy.</h4></li>
+                            <li><h4>No hype-driven development here.</h4></li>
+                            <li><h4>Compatibility is best-effort only.</h4></li>
+                        </ul>
+                    </demo-layout-flex-fit>
+                </demo-card>
+            </demo-layout-grid>
+        </section>
+
+        <section id="quote" class="wrapper">
+            <demo-q>
+                <div slot="content">
+                    <p>Against all reasonable expectations, he actually published the random things he wrote on a whim.There are no groundbreaking ideas, no innovation, and absolutely no sign of restraint.</p>
+                    <p>Frankly, the sheer consistency of its lack of originality is almost impressive.I have to admit: I truly respect the courage it takes to publish something like this.</p>
+                </div>
+            </demo-q>
+            <demo-business-card
+                    avatar="/avatars/partner.png"
+                    title="A run-of-the-mill AI."
+                    sub-title="My partner"
+                    link-href="https://example.org/"
+                    link-desc="He declined to disclose his homepage."
+            ></demo-business-card>
+        </section>
+
+        <section id="care">
+            <demo-care
+                    config-name="care"
+                    filtering-color-weak="#b365b5cc"
+                    filtering-color-strong="#2d2e8acc"
+                    class="wrapper"
+            ></demo-care>
+        </section>
+
+        <footer>
+            <demo-reference config-name="reference" class="wrapper"></demo-reference>
+            <div id="channels" class="wrapper"><demo-channels config-name="channels"></demo-channels></div>
+            <demo-footer config-name="footer" class="wrapper"></demo-footer>
+        </footer>
+    </main>
+
+    <demo-cookie config-name="cookie"></demo-cookie>
+
+    <demo-navi config-name="navi">
+        <demo-icon
+                slot="logo"
+                category="brands"
+                name="W"
+                filled
+        ></demo-icon>
+    </demo-navi>
+</body>
+</html>

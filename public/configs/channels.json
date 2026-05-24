@@ -1,0 +1,9 @@
+[
+  { "name": "github", "link": "https://github.com/rehyouka/" },
+  { "name": "bluesky", "link": "https://example.org/" },
+  { "name": "fosstodon", "link": "https://example.org/" },
+  { "name": "linkedin", "link": "https://example.org/" },
+  { "name": "slack", "link": "https://example.org/" },
+  { "name": "x", "link": "https://example.org/" },
+  { "name": "youtube", "link": "https://example.org/" }
+]

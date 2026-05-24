@@ -1,0 +1,2 @@
+h2.demo-title>a{opacity:0;cursor:pointer;-webkit-user-select:none;user-select:none;margin-right:5px;text-decoration:none;transition:opacity .2s,color .2s}h2.demo-title:hover>a{opacity:1}
+/*$vite$:1*/
