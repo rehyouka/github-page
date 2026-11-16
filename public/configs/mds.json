@@ -1,0 +1,34 @@
+[
+  {
+    "key": "musings",
+    "name": "musings",
+    "isDir": true,
+    "list": [
+      {
+        "key": "musings/2026",
+        "name": "2026",
+        "isDir": true,
+        "list": [
+          {
+            "key": "musings/2026/A Year on Steam",
+            "name": "A Year on Steam",
+            "isDir": false,
+            "imgSrc": "/imgs/A_Year_on_Steam/background.png",
+            "datetime": "2026-08-05",
+            "authorName": "William Weng",
+            "authorLink": "https://steamcommunity.com/profiles/76561198396991898/"
+          },
+          {
+            "key": "musings/2026/A Year On Apple Music",
+            "name": "A Year On Apple Music",
+            "isDir": false,
+            "imgSrc": "/imgs/A_Year_On_Apple_Music/albums.png",
+            "datetime": "2026-08-06",
+            "authorName": "William Weng",
+            "authorLink": "https://music.apple.com/"
+          }
+        ]
+      }
+    ]
+  }
+]

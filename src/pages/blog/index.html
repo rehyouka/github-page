@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wlog</title>
+
+    <link rel="icon" href="/icons/brands/filled/W.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/devices.css">
+    <link rel="stylesheet" href="/assets/demo-components.css">
+    <script type="module">
+        import { DemoBlog } from '../../../../demo-components/dist/demo-components.es.js';
+    </script>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            demo-blog {
+                --blog-tree-color-bkg-x: #2c2c2c;
+                --blog-tree-color-txt-x: #cccccc;
+                --blog-tree-color-bkg-select-x: #686868;
+                --blog-tree-color-txt-select-x: #e1e1e1;
+                --blog-content-color-bkg-x: #0d0d0d;
+                --blog-content-color-txt-x: #545454;
+                --blog-img-color-gradient-x: 27 27 27;
+                --blog-article-color-bkg-x: #1b1b1b;
+                --blog-article-color-txt-x: #afafaf;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <demo-blog root-name="Wlog" config-name-tree="mds" config-name-bar="bar"></demo-blog>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+[
+  {
+    "groupName": "view",
+    "groupList": [
+      {
+        "eventName": "scroll",
+        "iconCategory": "heroicons",
+        "iconName": "document-arrow-up"
+      },
+      {
+        "eventName": "emoji",
+        "iconCategory": "heroicons",
+        "iconName": "face-smile"
+      },
+      {
+        "eventName": "download",
+        "iconCategory": "heroicons",
+        "iconName": "arrow-down-tray"
+      }
+    ]
+  },
+  {
+    "groupName": "dir",
+    "groupList": [
+      {
+        "eventName": "home",
+        "iconCategory": "heroicons",
+        "iconName": "home",
+        "link": "/pages/home/index.html"
+      },
+      {
+        "eventName": "root",
+        "iconCategory": "heroicons",
+        "iconName": "stop"
+      },
+      {
+        "eventName": "back",
+        "iconCategory": "heroicons",
+        "iconName": "backward"
+      }
+    ]
+  }
+]

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../styles/theme.css">
     <script type="module">
         import {
-            DemoNavi,
+            DemoNaviMap,
             DemoSignboard,
             DemoGallery,
             DemoLayoutGrid,
@@ -115,6 +115,7 @@
         }
         section#care > demo-care {
             color: var(--rehyouka-color-bkg-primary);
+            --btn-color-dark-x: var(--rehyouka-color-bkg-primary);
             --care-max-width-x: var(--rehyouka-max-width);
             padding: 0;
         }
@@ -147,22 +148,25 @@
             --btn-color-dark-x: var(--rehyouka-color-primary);
         }
 
-        demo-navi {
-            --navi-color-txt-x: var(--rehyouka-color-txt-secondary);
-            --navi-color-txt-select-x: var(--rehyouka-color-txt-primary);
-            --navi-color-txt-title-x: var(--rehyouka-color-txt-secondary);
-            --navi-color-bg-x: var(--rehyouka-color-bkg-secondary);
-            --navi-width-max: var(--rehyouka-max-width);
+        demo-navi-map {
+            --navi-map-color-txt-x: var(--rehyouka-color-txt-secondary);
+            --navi-map-color-txt-select-x: var(--rehyouka-color-txt-primary);
+            --navi-map-color-txt-title-x: var(--rehyouka-color-txt-secondary);
+            --navi-map-color-bg-x: var(--rehyouka-color-bkg-secondary);
+            --navi-map-width-max-x: var(--rehyouka-max-width);
             --a-color-select-x: var(--rehyouka-color-txt-primary);
         }
-        demo-navi > demo-icon[slot=logo] {
+        demo-navi-map > demo-icon[slot=logo] {
             width: 1em;
             height: 1em;
             color: var(--rehyouka-color-txt-primary);
         }
+
+        /* Webkit (Chrome, Safari, Edge) */
+        .scrollbar-none::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body>
+<body class="scrollbar-none">
     <main>
         <header>
             <demo-signboard config-name="signboard" class="wrapper"></demo-signboard>
@@ -260,13 +264,13 @@
 
     <demo-cookie config-name="cookie"></demo-cookie>
 
-    <demo-navi config-name="navi">
+    <demo-navi-map config-name="navi">
         <demo-icon
                 slot="logo"
                 category="brands"
                 name="W"
                 filled
         ></demo-icon>
-    </demo-navi>
+    </demo-navi-map>
 </body>
 </html>
